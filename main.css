@@ -1,0 +1,137 @@
+/** GLOBAL CSS **/
+
+
+:root { 
+    --clr-primary-400: hsl(243, 87%, 12%);
+    --clr-primary-500: hsl(238, 22%, 44%);
+
+    --clr-accent-400: hsl(224, 93%, 58%);
+    --clr-accent-500:  hsl(170, 45%, 43%);
+
+    --clr-neutral-400: hsl(240, 75%, 98%);
+    --clr-neutral-500: hsl(0, 0%, 75%);
+
+
+    --ff-primary : 'Open Sans', sans-serif;
+    --ff-secondary : 'Raleway', sans-serif;
+
+
+    --fs-h1: 1.5rem;
+    --fs-h2: 1.2rem;
+    --fs-h3: .8rem;
+
+    --fw-400: 400;
+    --fw-500: 500;
+    --fw-700: 700;
+
+
+    --default-mr-text: 1rem;
+
+
+}
+
+
+body {
+    font-family: var(--ff-primary);
+}
+
+.flex {
+    display: flex;
+} 
+
+
+.grid {
+    display: grid;
+}
+
+
+h1 {
+    margin-block: var(--default-mr-text);
+    font-family: var(--ff-secondary);
+
+}
+
+
+p {
+    margin-bottom: var(--default-mr-text);
+}
+
+header .ul_items > li >a {
+    text-decoration: none;
+    color:var(--clr-primary-500);
+    font-weight: var(--fw-400);
+    cursor:pointer;
+    line-height: 14px;
+}
+
+button {
+    border: none;
+    line-height: 1.5;
+    background-color: var(--clr-accent-400);
+    font-family: var(--ff-primary);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    margin-bottom: 5rem;
+}
+
+header .ul_items {
+    list-style: none;    
+
+}
+
+@media screen and (min-width:20rem) {
+
+    section.illustration_container_1 {
+        display: flex;
+        flex-direction: column-reverse;
+        margin-inline: auto;
+    }
+
+    section.illustration_container_1 .content_container {
+        margin-block: auto;
+    }
+
+    header .ul_items {
+        gap:3rem;
+        margin-block:auto;
+    }
+
+    section.illustration_container_1 .content_container h1, section.illustration_container_1 .content_container p {
+        text-align: center;
+    }
+
+
+
+
+
+}
+
+@media screen and (min-width:40rem) {
+    section.illustration_container_1 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        max-width: 1200px;  
+        }
+
+        header .ul_items {
+            gap:3rem;
+        }
+
+        header {
+            max-width:1300px;
+            margin-inline: auto;
+        }
+
+
+    
+    
+}
+
+
+section.illustration_container_1 .illustration_img {
+    max-width: 100%;
+}
