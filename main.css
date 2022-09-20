@@ -89,6 +89,7 @@ header .ul_items {
         display: flex;
         flex-direction: column-reverse;
         margin-inline: auto;
+        max-width: 90%;
     }
 
     section.illustration_container_1 .content_container {
@@ -96,7 +97,7 @@ header .ul_items {
     }
 
     header .ul_items {
-        gap:3rem;
+        gap:2rem;
         margin-block:auto;
     }
 
@@ -104,6 +105,13 @@ header .ul_items {
         text-align: center;
     }
 
+    header .ul_items > li >a {
+        font-size: .8rem;
+    }
+
+    header .logo {
+        height: 35px;
+    }
 
 
 
