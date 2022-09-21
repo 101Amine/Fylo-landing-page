@@ -26,6 +26,7 @@
 
 
     --default-mr-text: 2rem;
+    --default-mr-section: 5rem;
 
 
 }
@@ -33,6 +34,10 @@
 
 body {
     font-family: var(--ff-primary);
+}
+
+section {
+    margin-bottom: var(--default-mr-section);
 }
 
 .flex {
@@ -47,14 +52,12 @@ body {
 .btn {
     color :aliceblue;
     font-weight: var(--fw-700);
-    width: 50%;
     height: 2.5rem;
     background-color: #6C9BFF;
 }
 
 input {
     margin-bottom: 1rem;
-    width: 70%;
     height: 2.5rem;
     padding: 0.8rem;
 }
@@ -193,6 +196,76 @@ header .ul_items {
 }
 
 
-section.illustration_container_1 .illustration_img {
-    max-width: 100%;
+
+/** second section **/
+
+
+.bg-curved {
+    background-color: var(--clr-neutral-400);
 }
+
+article .illustration_2 {
+    padding-top: 5rem;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.fylo-container .fylo-header {
+    padding-top: 4rem;
+}
+
+.fylo-container  p:nth-child(3){
+    padding-bottom: 2rem;
+}
+
+
+
+.fylo-link {
+    margin-inline: auto;
+    gap: .3rem;
+    position: relative;
+    cursor: pointer;
+}
+
+.fylo-link h3:hover {
+    color:hsl(176, 36%, 50%);
+}
+
+.fylo-link {
+    border-bottom: 1px solid var(--clr-accent-500);
+    max-width: max-content;
+    
+}
+
+/* .fylo-link::before {
+    content: '';
+    position: absolute;
+    border-bottom: 1px solid var(--clr-accent-500);
+    width: 100%;
+    bottom: 0;
+    transform: translate(0, 5px);
+} */
+
+.fylo-link h3 {
+    color: var(--clr-accent-500);
+    font-size: 1rem;
+}
+
+.icon_arrow {
+    height: 25px;
+    width: 25px;
+    margin-block: auto;
+}
+
+.body-text {
+    font-weight: var(--fw-500);
+    color: var(--clr-primary-500);
+    line-height: 1.5;
+    font-size: 1rem;
+}
+
+
+
+
