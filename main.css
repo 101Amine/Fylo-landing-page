@@ -36,7 +36,7 @@ body {
     font-family: var(--ff-primary);
 }
 
-section {
+section:not(:last-child) {
     margin-bottom: var(--default-mr-section);
 }
 
@@ -78,7 +78,7 @@ input::placeholder {
 
 
 h1 {
-    margin-block: var(--default-mr-text);
+    padding-block: var(--default-mr-text);
     font-family: var(--ff-secondary);
 
 }
@@ -170,6 +170,27 @@ header .ul_items {
         margin-inline: 20px;
     }
 
+    .first_footer .form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .first_footer .content {
+        padding-inline: 20px;
+    }
+    
+    .first_footer .form input,
+    .first_footer .form button {
+        width: 50%;
+        align-self: center;
+    }
+
+    .first_footer .content h1,
+    .first_footer .content p {
+        text-align: center;
+    }
+
 }
 
 @media screen and (min-width:40rem) {
@@ -215,8 +236,45 @@ header .ul_items {
           }
 
         
+        section.illustration_2 .card{
+            margin-inline: 0;
+        }
 
+        
+        
+        .first_footer {
+            display: grid;
+        }
+
+        .first_footer {
+            display: grid;
+            padding: 50px;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+        }
+
+        .first_footer .form {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        
+        .first_footer .form input
+         {
+            width: 85%;
+            align-self:flex-start;
+
+        }
+
+        .first_footer .form button {
+            width: 53%;            align-self:flex-start;
+        }
     
+        .first_footer .content h1,
+        .first_footer .content p {
+        text-align:initial;
+        width: 80%;
+    }
 }
 
 
@@ -279,6 +337,7 @@ article .illustration_2 {
 
 section.illustration_2 {
     background-color: var(--clr-neutral-400);
+    padding-bottom: 5rem;
 }
 
 
@@ -351,3 +410,19 @@ section.illustration_2 {
     opacity: 65%;
 }
 
+/** FOOTER **/
+
+footer {
+    color:white;
+}
+
+footer .first_footer {
+    background: var(--clr-primary-500);
+}
+
+
+
+.first_footer .form button {
+    background-color: var(--clr-primary-400);
+}
+ 
