@@ -149,16 +149,25 @@ header .ul_items {
         height: 35px;
     }
 
-    .form {
+    .content_container .form {
         flex-direction: column;
     }
 
-    .btn {
+    .content_container .form .btn {
         width: 100%;
     }
     
-    input {
+    .content_container .form input {
         width: 100%;
+    }
+
+
+    section.illustration_2 .card {
+        margin-inline: 5rem;
+    }
+
+    .body-text {
+        margin-inline: 20px;
     }
 
 }
@@ -192,12 +201,32 @@ header .ul_items {
             width: 70%;
         }
     
+        article.bg-curved {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap:4rem;
+            max-width: clamp(400px, 90%, 1200px);  
+            margin-inline: auto;
+        }
+
+        article img.illustration_2 {
+            padding-top: 5rem;
+            order: 1;
+          }
+
+        
+
     
 }
 
 
 
 /** second section **/
+
+
+.x2-grid {
+    grid-template-columns: 65px 1fr;
+}
 
 
 .bg-curved {
@@ -248,6 +277,11 @@ article .illustration_2 {
     transform: translate(0, 5px);
 } */
 
+section.illustration_2 {
+    background-color: var(--clr-neutral-400);
+}
+
+
 .fylo-link h3 {
     color: var(--clr-accent-500);
     font-size: 1rem;
@@ -267,5 +301,53 @@ article .illustration_2 {
 }
 
 
+/** CARD STYLES **/
 
+.card {
+    margin-top:var(--default-mr-section);
+    background-color: white;
+    box-shadow: 0px 0px 10px 5px rgba(56, 56, 56, 0.0458843);
+    border-radius: 10px;
+    padding: 35px;
+}
+
+
+.quotes {
+    height: 30px;
+    width: 30px;
+    object-fit: contain;
+    padding-bottom: 1rem;
+}
+
+.card p {
+    font-size: 1rem;
+    color:var(--clr-primary-400);
+    opacity: 90%;
+    font-weight: var(--fw-400);
+    line-height: 1.5rem;
+    letter-spacing: 0.5px;
+}
+
+.card .username  {
+    gap: 1rem;
+}
+
+
+.card .username img {
+    border-radius: 50%;
+}
+
+
+.card .username .CTA h3{
+    font-size: 1.1rem;
+    letter-spacing: 0.55px;
+    padding-bottom: 2.5px;
+}
+
+
+.card .username .CTA h5{
+    font-size: .7rem;
+    letter-spacing: 0.55px;
+    opacity: 65%;
+}
 
