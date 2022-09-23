@@ -426,3 +426,8 @@ footer .first_footer {
     background-color: var(--clr-primary-400);
 }
  
+
+
+footer .second_footer {
+    background-color: red;
+}
